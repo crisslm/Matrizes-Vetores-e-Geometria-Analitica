@@ -1,12 +1,12 @@
 📐 Projeto de Matrizes, Vetores e Geometria Analítica em C
 
-Este projeto foi desenvolvido com o objetivo de praticar e demonstrar conceitos fundamentais de álgebra linear e geometria analítica, utilizando a linguagem C para implementar operações com vetores, matrizes e elementos geométricos.
+Este projeto está sendo desenvolvido com o objetivo de praticar e demonstrar conceitos fundamentais de álgebra linear e geometria analítica, utilizando a linguagem C para implementar operações com vetores, matrizes e elementos geométricos.
 
 #OBS: o PROJETO AINDA ESTÁ EM DESENVOLVIMENTO, SENDO ASSIM, A APRESENTAÇÃO A SEGUIR DIZ RESPEITO ÀS FUTURAS FUNCIONALIDADES.
 
 🚀 Funcionalidades
 
-O projeto conta com módulos que permitem:
+O projeto contará com módulos que permitem:
 
 🔢 Operações com Vetores
 

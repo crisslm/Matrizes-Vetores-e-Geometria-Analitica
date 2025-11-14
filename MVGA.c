@@ -21,7 +21,7 @@ int main() {
     int** matriz = (int**)malloc(sizeof(int*)*n);
     for(i=0;i<n;i++) matriz[i] = (int*)malloc(sizeof(int)*n);
     
-    pritf("Insira os elementos da matriz: ");
+    printf("Insira os elementos da matriz: ");
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
             scanf("%d",&matriz[i][j]);
