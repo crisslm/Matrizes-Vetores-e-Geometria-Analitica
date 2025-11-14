@@ -15,6 +15,30 @@ int** transposta(int** v, int m, int n){
     return matrizT;
 }
 
+//M e N das duas matrizes devem ser iguais!
+int** somaMatriz(int** v1, int** v2, int m, int n){
+    int i, j;
+    int resp[m][n];
+    for(i=0;i<m;i++){
+        for(j=0;j<n;j++){
+            resp[m][n] = v1[i][j] + v2[i][j];
+        }
+    }
+    return resp;
+}
+
+//M e N das duas matrizes devem ser iguais!
+int** subtraiMatriz(int** v1, int** v2, int m, int n){
+    int i, j;
+    int resp[m][n];
+    for(i=0;i<m;i++){
+        for(j=0;j<n;j++){
+            resp[m][n] = v1[i][j] - v2[i][j];
+        }
+    }
+    return resp;
+}
+
 int main() {
     int m,n,i,j;
     printf("Insira o tamanho da matriz MxN: ");
