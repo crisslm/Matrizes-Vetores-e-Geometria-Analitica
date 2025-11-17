@@ -63,7 +63,14 @@ int main() {
         printf("\n");
     }
 
-    
+    for(i=0;i<m;i++){
+        free(matriz[i]);
+    }
+    free(matriz);
+    for(i=0;i<n;i++){
+        free(matrizT[i]);
+    }
+    free(matrizT);
     
     return 0;
 }
