@@ -18,7 +18,8 @@ int** transposta(int** v, int m, int n){
 //M e N das duas matrizes devem ser iguais!
 int** somaMatriz(int** v1, int** v2, int m, int n){
     int i, j;
-    int resp[m][n];
+    int** resp = (int**)malloc(sizeof(int*)*m);
+    for(i=0;i<m;i++) resp[i] = (int*)malloc(sizeof(int)*n);
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
             resp[m][n] = v1[i][j] + v2[i][j];
@@ -30,7 +31,8 @@ int** somaMatriz(int** v1, int** v2, int m, int n){
 //M e N das duas matrizes devem ser iguais!
 int** subtraiMatriz(int** v1, int** v2, int m, int n){
     int i, j;
-    int resp[m][n];
+    int** resp = (int**)malloc(sizeof(int*)*m);
+    for(i=0;i<m;i++) resp[i] = (int*)malloc(sizeof(int)*n);
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
             resp[m][n] = v1[i][j] - v2[i][j];
