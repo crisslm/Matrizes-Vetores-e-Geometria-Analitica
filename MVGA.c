@@ -1,5 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
+//Determinante 2x2;
+int determinante2x2(int a, int b, int c, int d){
+    int det = (a * d) - (b * c);
+    return det;
+}
+
+
+int determinante3x3(int** m){
+    int soma = 0;
+    soma += m[0][0] * determinante2x2(m[1][1],m[1][2],m[2][1],m[2][2]);
+    soma -= m[0][1] * determinante2x2(m[1][0],m[1][2],m[2][0],m[2][2]);
+    soma += m[0][2] * determinante2x2(m[1][0],m[1][1],m[2][0],m[2][1]);
+    return soma;
+}
 
 //Primeira Versão com matriz mxn
 int** transposta(int** v, int m, int n){
@@ -64,6 +80,15 @@ int main() {
         }
         printf("\n");
     }
+    if(m == 2 && n == 2){
+        int det = determinante2x2(matriz[0][0], matriz[0][1], matriz [1][0], matriz[1][1]);
+        printf("\nDeterminante: %d", det);
+    }
+    if(m == 3 && n == 3){
+        int det = determinante3x3(matriz);
+        printf("\nDeterminante: %d", det);
+    }
+    
 
     for(i=0;i<m;i++){
         free(matriz[i]);
